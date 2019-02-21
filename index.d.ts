@@ -6,6 +6,6 @@
 export declare const Component: () => ClassDecorator;
 export declare const Singleton: () => ClassDecorator;
 
-export interface Injector {
-  resolve<T>(target: any): T;
+export class Injector {
+  static resolve<T>(target: any): T;
 }
