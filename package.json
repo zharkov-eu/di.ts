@@ -1,0 +1,31 @@
+{
+  "name": "@operative/di",
+  "version": "1.0.0",
+  "description": "TypeScript dependency injection",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zharkov-eu/di.ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "di"
+  ],
+  "author": "Evgeni Zharkov <zharkov.ev.u@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "peerDependencies": {
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.26",
+    "mocha": "^6.0.0",
+    "ts-node": "^8.0.2"
+  }
+}
