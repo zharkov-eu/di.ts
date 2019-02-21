@@ -1,4 +1,5 @@
 # TypeScript Dependency Injection
+> npm package: [@operative/di](https://www.npmjs.com/package/@operative/di)
 
 Dependency Injection for TypeScript-based projects.
 
@@ -10,7 +11,7 @@ In tsconfig.json must be set to "true" properties:
 * experimentalDecorators
 * emitDecoratorMetadata
 
-## Аннотации
+## Annotations
 
 * @Component - all classes available for injection should be marked with this annotation
 * @Singleton - create only one instance of the class and use it in all injections

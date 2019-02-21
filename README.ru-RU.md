@@ -1,4 +1,5 @@
 # TypeScript Dependency Injection
+> npm package: [@operative/di](https://www.npmjs.com/package/@operative/di)
 
 Инъекция зависимостей для TypeScript проектов.
 
