@@ -23,6 +23,8 @@ export const Singleton = (): ClassDecorator => {
     singleton.INSTANCE = null;
     singleton.TOKENS = tokens;
 
+    for (const k in target)
+      singleton[k] = target[k];
     singleton.prototype = target.prototype;
     return singleton;
   };

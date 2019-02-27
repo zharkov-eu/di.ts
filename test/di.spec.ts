@@ -10,6 +10,7 @@ import assert from "assert";
 import { Component, Injector, Singleton } from "../src/di";
 
 abstract class Abstract {
+  protected static ABSTRACT_PROP = "ABSTRACT";
   protected _counter: number;
 
   protected constructor(protected readonly _name: string) {
@@ -32,8 +33,14 @@ abstract class Abstract {
 @Component()
 @Singleton()
 class A extends Abstract {
+  public static PUB_PROP = "PUBLIC";
+  private static LOCAL_PROP = "LOCAL";
+
   constructor() {
     super("A");
+    assert.strictEqual(A.PUB_PROP, "PUBLIC");
+    assert.strictEqual(A.LOCAL_PROP, "LOCAL");
+    assert.strictEqual(A.ABSTRACT_PROP, "ABSTRACT");
   }
 }
 
